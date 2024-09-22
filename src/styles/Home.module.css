@@ -1,0 +1,105 @@
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sectionTitle h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sectionTitle p {
+  color: #fff;
+  font-size: 17px;
+  max-width: 470px;
+  margin: auto;
+  line-height: 26px;
+}
+
+form {
+  max-width: 470px;
+  background: #fff;
+  margin: auto;
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 17px;
+  padding: 0px 20px;
+}
+
+form input[type="submit"] {
+  margin: 5px;
+  background-color: blueviolet;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 0px 30px;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.cryptoTable {
+  background: rgb(23 37 84);
+  max-width: 800px;
+  margin: auto;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #3c3c3c;
+}
+
+.tableLayout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #3c3c3c;
+  cursor: pointer;
+  color: white;
+}
+
+.tableLayout:last-of-type {
+  border-bottom: none;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.coinImage {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle h1 {
+    font-size: 35px;
+  }
+  .marketCap {
+    display: none;
+  }
+
+  .tableLayout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+
+  .coinImage {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tableLayout p {
+    font-size: 15px;
+  }
+}
